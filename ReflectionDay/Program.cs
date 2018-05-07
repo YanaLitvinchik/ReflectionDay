@@ -11,7 +11,7 @@ namespace ReflectionDay
     class Program
     {
         public static void Serialize(Stream s, object ob1)
-        {
+        {//
             var field = ob1.GetType();
             var fields1 = ob1.GetType().GetFields(BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Static | BindingFlags.Public);
             StreamWriter sw = new StreamWriter(s);
